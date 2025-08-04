@@ -8,41 +8,41 @@ const teamMembers = [
         name: 'Divyansh Nagar', 
         roleKey: 'teamLeadRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=DN',
-        linkedin: 'https://linkedin.com/in/divyansh-nagar',
-        github: 'https://github.com/divyansh-nagar',
-        resume: 'https://drive.google.com/file/d/1234567890/view' // Replace with actual resume link
+        linkedin: 'https://www.linkedin.com/in/divyansh-nagar-060263344/',
+        github: 'https://github.com/inddivyansh',
+        resume: 'https://d8it4huxumps7.cloudfront.net/uploads/profileData/files/$%7Bthis.teamId%7D/68774f48d7f6d_divyansh_resume.pdf' // Replace with actual resume link
     },
     { 
         name: 'Manorath Chugh', 
         roleKey: 'backendDevRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MC',
-        linkedin: 'https://linkedin.com/in/manorath-chugh',
-        github: 'https://github.com/manorath-chugh',
-        resume: 'https://drive.google.com/file/d/1234567891/view' // Replace with actual resume link
+        linkedin: 'https://www.linkedin.com/in/manorath-chugh-b52356353/',
+        github: 'https://github.com/manorath295',
+        resume: 'https://d8it4huxumps7.cloudfront.net/uploads/profileData/files/28670914/rajaduraimbm12_6878ed229d041.pdf' // Replace with actual resume link
     },
     { 
         name: 'Neel Shroff', 
         roleKey: 'mlEngRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=NS',
-        linkedin: 'https://linkedin.com/in/neel-shroff',
-        github: 'https://github.com/neel-shroff',
-        resume: 'https://drive.google.com/file/d/1234567892/view' // Replace with actual resume link
+        linkedin: 'https://www.linkedin.com/in/neel-shroff-7608562a4/',
+        github: 'https://github.com/NeelShroff',
+        resume: 'https://d8it4huxumps7.cloudfront.net/uploads/profileData/files/28631433/priyankapatel2128_6883201b5e402.pdf' // Replace with actual resume link
     },
     { 
         name: 'Mridul Bansal', 
         roleKey: 'mlDataScientistRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MB',
-        linkedin: 'https://linkedin.com/in/mridul-bansal',
-        github: 'https://github.com/mridul-bansal',
-        resume: 'https://drive.google.com/file/d/1234567893/view' // Replace with actual resume link
+        linkedin: 'https://www.linkedin.com/in/mridul-bansal-86670a283',
+        github: 'https://github.com/MridulBansal-123',
+        resume: 'https://d8it4huxumps7.cloudfront.net/uploads/profileData/files/28787045/haarikanuthi115_687bc68a216f2.pdf' // Replace with actual resume link
     },
     { 
         name: 'Mohil Mandape', 
         roleKey: 'mlEngRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MM',
-        linkedin: 'https://linkedin.com/in/mohil-mandape',
-        github: 'https://github.com/mohil-mandape',
-        resume: 'https://drive.google.com/file/d/1234567894/view' // Replace with actual resume link
+        linkedin: 'https://www.linkedin.com/in/mohil-mandape-6a9638291',
+        github: 'https://github.com/MOHILMANDAPE15',
+        resume: 'https://d8it4huxumps7.cloudfront.net/uploads/profileData/files/32416755/mohilmandpe33_6801547ecc13d.pdf' // Replace with actual resume link
     },
 ];
 
