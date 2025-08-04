@@ -14,6 +14,13 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Mobile viewport adjustments */
+@media (max-width: 640px) {
+  body {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
 /* Minimalistic animations for smooth background */
 @keyframes float {
   0%, 100% { 
