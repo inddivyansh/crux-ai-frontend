@@ -37,9 +37,9 @@ const Header = ({ role, setPage, activePage, theme, toggleTheme }) => {
     );
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-800/50 bg-black/90 backdrop-blur-lg">
+        <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-800/50 bg-black/90 backdrop-blur-lg min-h-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
+                <div className="flex items-center justify-between h-16 min-h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => setPage('home')}>
                              <Bot className="w-6 h-6 lg:w-7 lg:h-7 text-purple-400" />
