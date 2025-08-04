@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { TranslationProvider } from './contexts/TranslationContext';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -66,11 +67,13 @@ const App = () => {
     };
 
     return (
-        <Layout role={role} setPage={setPage} activePage={page}>
-            <AnimatePresence mode="wait">
-                {renderPage()}
-            </AnimatePresence>
-        </Layout>
+        <TranslationProvider>
+            <Layout role={role} setPage={setPage} activePage={page}>
+                <AnimatePresence mode="wait">
+                    {renderPage()}
+                </AnimatePresence>
+            </Layout>
+        </TranslationProvider>
     );
 };
 

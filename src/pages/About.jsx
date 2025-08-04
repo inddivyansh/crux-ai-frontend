@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Github, FileText } from 'lucide-react';
+import { useTranslation } from '../contexts/TranslationContext';
 
 const teamMembers = [
     { 
         name: 'Divyansh Nagar', 
-        role: 'Team Lead & Frontend UI/UX Dev', 
+        roleKey: 'teamLeadRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=DN',
         linkedin: 'https://linkedin.com/in/divyansh-nagar',
         github: 'https://github.com/divyansh-nagar',
@@ -13,7 +14,7 @@ const teamMembers = [
     },
     { 
         name: 'Manorath Chugh', 
-        role: 'Backend Dev & RAG Engineer', 
+        roleKey: 'backendDevRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MC',
         linkedin: 'https://linkedin.com/in/manorath-chugh',
         github: 'https://github.com/manorath-chugh',
@@ -21,7 +22,7 @@ const teamMembers = [
     },
     { 
         name: 'Neel Shroff', 
-        role: 'ML & RAG Engineer', 
+        roleKey: 'mlEngRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=NS',
         linkedin: 'https://linkedin.com/in/neel-shroff',
         github: 'https://github.com/neel-shroff',
@@ -29,7 +30,7 @@ const teamMembers = [
     },
     { 
         name: 'Mridul Bansal', 
-        role: 'ML Engineer & Data Scientist', 
+        roleKey: 'mlDataScientistRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MB',
         linkedin: 'https://linkedin.com/in/mridul-bansal',
         github: 'https://github.com/mridul-bansal',
@@ -37,7 +38,7 @@ const teamMembers = [
     },
     { 
         name: 'Mohil Mandape', 
-        role: 'ML & RAG Engineer', 
+        roleKey: 'mlEngRole', 
         avatar: 'https://placehold.co/128x128/1a1a1a/ffffff?text=MM',
         linkedin: 'https://linkedin.com/in/mohil-mandape',
         github: 'https://github.com/mohil-mandape',
@@ -45,9 +46,13 @@ const teamMembers = [
     },
 ];
 
-const About = () => (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-8 sm:space-y-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-100">Meet Team CRuX</h1>
+const About = () => {
+    const { t } = useTranslation();
+
+    return (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-8 sm:space-y-12">
+            <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-100">{t('aboutTitle')}</h1>
+            <p className="text-lg text-gray-400 text-center max-w-3xl mx-auto">{t('aboutDescription')}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {teamMembers.map((member, index) => (
                 <motion.div 
@@ -59,7 +64,7 @@ const About = () => (
                 >
                     <img src={member.avatar} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 border-2 border-purple-400" />
                     <h3 className="text-lg sm:text-xl font-bold text-gray-100">{member.name}</h3>
-                    <p className="text-sm sm:text-base text-purple-400 mb-3 sm:mb-4">{member.role}</p>
+                    <p className="text-sm sm:text-base text-purple-400 mb-3 sm:mb-4">{t(member.roleKey)}</p>
                     <div className="flex justify-center gap-2 sm:gap-3 mt-3 sm:mt-4">
                         <a 
                             href={member.linkedin} 
@@ -93,7 +98,8 @@ const About = () => (
             ))}
         </div>
     </motion.div>
-);
+    );
+};
 
 export default About;
 

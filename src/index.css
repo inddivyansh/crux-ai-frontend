@@ -58,3 +58,29 @@ html, body {
     transform: scale(1.05);
   }
 }
+
+/* Animated border flow */
+@keyframes border-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-flow {
+  background: linear-gradient(-45deg, #8b5cf6, #06b6d4, #8b5cf6, #06b6d4);
+  background-size: 400% 400%;
+  animation: border-flow 3s ease-in-out infinite;
+  border-radius: 1rem;
+  padding: 2px;
+}
+
+.animate-border-flow input {
+  background: rgb(31 41 55 / 0.8);
+  border-radius: calc(1rem - 2px);
+}
